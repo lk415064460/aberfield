@@ -7,24 +7,22 @@ highlighter: rouge
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: dbyll
+title: Aberfield
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Article
 
 description: Stylish Jekyll Theme
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
-  twitter: dbtek
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
+  name: Aberfield
+  email: liufangyou1992@gmail.com
+  github: lk415064460
+  linkedin: 芳友-刘-1a1530139/
+  bio: 一叶障目，不如自挂东南枝
   email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml
