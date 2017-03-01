@@ -2,6 +2,7 @@
 layout: post
 title: 关于Github Pages 搭建blog
 categories: [技术]
+tags: [技术]
 description: Github Pages免费blog搭建，从这里重新开始.
 ---
 
@@ -69,6 +70,8 @@ GitHub分配的一个域名，同时每个项目下面也会有一个域名，�
 <br />2、Jekyll 提供了插件功能，在网站源代码目录下，有一个名为 _plugins的目录， 你可以将一些插件放进去，这样，Jekyll在解析网站源代码时，就会运行你的插件， 这样插件是Ruby写成的。可以为Jekyll添加功能，例如，Jekyll默认是不提供分类 
 页面的，你可以写一个插件，根据文章内容生成分类页面。如果没有插件，你只能每次写文章，添加分类时，为每个分类手动写HTML页面。在本地运行 Jekyll 时，这些插件会自动被调用，但是GitHub在解析网站源代码时， 出于安全考虑，会开启安全模式，禁用
 这些插件，所以我们我们需要在本地用jekyll解析最终生成静态网站，提交到GitHub上。
+
+
 
 
 
