@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>关于Github Pages 搭建blog</title>
+	
+	<meta name="description" content="Github Pages免费blog搭建，从这里重新开始.">
+	
+	<meta name="author" content="Aberfield">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/lk415064460">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:liufangyou1992@gmail.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="//www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />
+				Aberfield
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="https://lk415064460.github.io/assets/media/author1.png" class="img-circle" />
+		<!--assets/media/author.png-->
+		<!--//www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150-->
+	</a>
+	<h3 class="title">
+		<a href="/">Aberfield</a>
+	</h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	一叶障目，不如自挂东南枝
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/lk415064460">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		  
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:liufangyou1992@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		 
+		<li>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/芳友-刘-1a1530139/">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>关于Github Pages 搭建blog </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+		 
+		 2017-03-1
+	 </span>
+	  <div class="article_body">
+	  <p>程序猿交友网站Github是众所周知的，他可以提供我们代码托管，和各地程序猿协作开发，也是许多开源项目的聚集地。为了交友（技术知识分享），Github提供了一种功能叫做Github Pages，它可以让我们基于自己项目建立自己的网站，
+这里就日常流水般的记录一下自己搭建的blogs。</p>
+
+<p>建立我们自己的网站的时候我们可以选取一些静态网站生成框架，这样可以自由的定制blog风格，而且很多工具可以在网上找到一堆的主题，选个中意的可以省去很多事情。看好的有两个框架<a href="http://jekyll.com.cn">Jekyll</a>、<a href="https://hexo.io">Hexo</a>,
+两个的区别在于Jekyll基于Ruby环境，而Hexo基于NodeJs环境（其实Jekyll也是可以在本地直接预览的）。而我选择的是Jekyll，因为是用的Mac，mac自带Ruby环境，平时也用的多一点，安装Jekyll起来也比较方便（其实也是个巨坑），其实想想，我也早就装NodeJs环境的。当然也有
+比较牛的，不用本地环境，直接将copy下来的主题一次改成自己喜欢的样式提交到Github上去，直接预览。</p>
+
+<p><a href="https://pages.github.com">Github Pages</a>提供了一些简单的指引，你可以根据指引来做一个很简单的Hello World 页面。</p>
+
+<p>这个博客搭建可以有几种选择：
+    <br />1、完全定制自己的博客
+    <br />2、找一会你喜欢的框架，然后修改后使用
+    <br />3、在Github上Fork别人的Blog，然后添加文章</p>
+
+<p>这里选择的是第二种 博客主题选择的是<a href="https://github.com/dbtek/dbyll">dbyll</a></p>
+
+<p>首先需要在Github首页上New 一个repository，名字尽可能取和Github userName一样的，如果不是，之后生成的链接会超长。创建完成之后Clone到本地文件就可以。接下来就需要我们配置Jekyll 环境了。</p>
+
+<p>打开终端，具体的命令如下</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">##查看ruby 版本，必须要在2.0.0之上才能安装Jekyll</span>
+<span class="o">~</span><span class="n">ruby</span> <span class="o">-</span><span class="n">v</span>                                                                    
+<span class="o">~</span><span class="n">ruby</span> <span class="mi">2</span><span class="o">.</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="n">p0</span> <span class="p">(</span><span class="mi">2014</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">25</span> <span class="n">revision</span> <span class="mi">49005</span><span class="p">)</span> <span class="p">[</span><span class="n">x86_64</span><span class="o">-</span><span class="n">darwin14</span><span class="p">]</span>
+<span class="c1">##如果ruby不够高，可以更新下</span>
+<span class="o">~</span><span class="n">sudo</span> <span class="n">gem</span> <span class="n">update</span> <span class="o">--</span><span class="nb">system</span>
+<span class="c1">##安装jekyll</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span>
+<span class="c1">##安装成功之后，查看版本号</span>
+<span class="err">$</span> <span class="n">jekyll</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+
+<p>注意: 
+    <br />1、Operation not permitted（EI Capitan） 如果Mac系统是EI Capitan 并且ruby环境装在了root目录下，
+    那需要关闭SIP保护，关闭它必须进入recover 模式（重启之后按住command+r），在工具中找到terminal执行csrutil disable命令，回车，然后重启，SIP保护就被关闭了。 
+    <br />2、ruby版本必须高于2.0.0。   如果ruby版本比较低 可以使用rvm 更新ruby版本<a href="https://segmentfault.com/a/1190000003784636">链接</a></p>
+
+<p>如果Jekyll安装成功了，那现在就可以将本地的serve运行起来了
+<br />1、将dbyll这个工程down下来，拷贝到Github repoeitory的本地目录下 
+<br />2、安装bundle用来管理gem，gem install bundle
+<br />3、cd 到Clone的repository目录下，bundle install
+<br />4、启动服务 bundle exec jekyll serve</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">##安装成功之后，查看版本号</span>
+<span class="o">~</span><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span>
+<span class="c1">##到博客目录下</span>
+<span class="o">~</span><span class="n">cd</span> <span class="no">MyBlogs</span>
+<span class="o">~</span><span class="n">bundle</span> <span class="n">install</span>
+<span class="c1">##运行serve</span>
+<span class="o">~</span><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<p>然后就可以以本地服务运行搭载dbyll这个静态网站了，地址一般为http://127.0.0.1:4000/ ,在网站里面很多内容都是定制好了，接下来感觉哪里不合适自己就改哪里了。文章路径是在_posts目录下，格式为md的，如果想布局好点可以稍微去看看markdown的语法，
+很容易的。</p>
+
+<p>github+jekyll的工作机制
+<br />1、简单来说，当你访问你github上面http:user.github.io的时候，GitHub会使用jekyll解析username下面的username.github.io项目中，分支为master的源码，构建一个静态网站，并将生成的index.html展示出来。每一个账户名下都会有一个
+GitHub分配的一个域名，同时每个项目下面也会有一个域名，这里就可以选择不同的分支来决定我们需要展现什么样子的网站。</p>
+
+<p><br />2、Jekyll 提供了插件功能，在网站源代码目录下，有一个名为 _plugins的目录， 你可以将一些插件放进去，这样，Jekyll在解析网站源代码时，就会运行你的插件， 这样插件是Ruby写成的。可以为Jekyll添加功能，例如，Jekyll默认是不提供分类 
+页面的，你可以写一个插件，根据文章内容生成分类页面。如果没有插件，你只能每次写文章，添加分类时，为每个分类手动写HTML页面。在本地运行 Jekyll 时，这些插件会自动被调用，但是GitHub在解析网站源代码时， 出于安全考虑，会开启安全模式，禁用
+这些插件，所以我们我们需要在本地用jekyll解析最终生成静态网站，提交到GitHub上。</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#技术-ref">
+					技术 <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=关于Github Pages 搭建blog"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="https://lk415064460.github.io/assets/media/author2.png" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Aberfield</h4>
+        <p class="author-bio">一叶障目，不如自挂东南枝</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/%E7%94%9F%E6%B4%BB/2013/11/14/sample-2.html" title="Sample 2">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2017 Aberfield with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'dbyll', 'auto');
+  ga('send', 'pageview');
+</script>
+
