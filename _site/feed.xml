@@ -7,7 +7,7 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>关于Github Pages 搭建blog</title>
+				<title>Github Pages免费blog搭建，从这里重新开始.</title>
 				<description>&lt;p&gt;程序猿交友网站Github是众所周知的，他可以提供我们代码托管，和各地程序猿协作开发，也是许多开源项目的聚集地。为了交友（技术知识分享），Github提供了一种功能叫做Github Pages，它可以让我们基于自己项目建立自己的网站，
 这里就日常流水般的记录一下自己搭建的blogs。&lt;/p&gt;
 

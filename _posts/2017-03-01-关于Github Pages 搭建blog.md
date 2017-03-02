@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于Github Pages 搭建blog
+title: Github Pages免费blog搭建，从这里重新开始.
 categories: [技术]
 tags: [技术]
 description: Github Pages免费blog搭建，从这里重新开始.
