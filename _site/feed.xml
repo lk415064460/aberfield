@@ -7,6 +7,32 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Effective Objective-C 2.0读书总结.</title>
+				<description>&lt;h2 id=&quot;effective-objective-c-20读书笔记&quot;&gt;Effective Objective-C 2.0读书笔记&lt;/h2&gt;
+
+&lt;p&gt;Effective Objective-C 2.0这本书买了将近一年了，始终没有花时间来看完，最近工作学习总是感觉肚子里面没啥东西，想来抽时间读完这本书，这里就对这本书稍微记记笔记，以后笔记好温习。&lt;/p&gt;
+</description>
+				<pubDate>Sun, 05 Mar 2017 00:00:00 +0800</pubDate>
+				<link>/%E6%8A%80%E6%9C%AF/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</link>
+				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</guid>
+			</item>
+		
+			<item>
+				<title>UDP广播接受所遇到的一些问题.</title>
+				<description>&lt;p&gt;UDP 广播所遇到的一些问题&lt;/p&gt;
+
+&lt;p&gt;问题一.Error Domain=NSPOSIXErrorDomain Code=51 “Network is unreachable” UserInfo={NSLocalizedDescription=Network is unreachable, NSLocalizedFailureReason=Error in send() function.} 在9.0的5s上面报错
+问题二.Error Domain=NSPOSIXErrorDomain Code=49 “Can’t assign requested address” UserInfo={NSLocalizedDescription=Can’t assign requested address, NSLocalizedFailureReason=Error in send() function.} 在10.2的6s上面报错&lt;/p&gt;
+
+&lt;p&gt;我一直以为是10.2在网络限制的严格导致UDP广播发送不出去，但是加了一段百度请求的页面还是会出现这样的问题。&lt;/p&gt;
+
+</description>
+				<pubDate>Sat, 04 Mar 2017 00:00:00 +0800</pubDate>
+				<link>/%E6%8A%80%E6%9C%AF/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</link>
+				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</guid>
+			</item>
+		
+			<item>
 				<title>Github Pages免费blog搭建，从这里重新开始.</title>
 				<description>&lt;p&gt;程序猿交友网站Github是众所周知的，他可以提供我们代码托管，和各地程序猿协作开发，也是许多开源项目的聚集地。为了交友（技术知识分享），Github提供了一种功能叫做Github Pages，它可以让我们基于自己项目建立自己的网站，
 这里就日常流水般的记录一下自己搭建的blogs。&lt;/p&gt;
