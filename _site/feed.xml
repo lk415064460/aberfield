@@ -7,46 +7,91 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Effective Objective-C 2.0读书总结.</title>
-				<description>&lt;h2 id=&quot;effective-objective-c-20读书笔记&quot;&gt;Effective Objective-C 2.0读书笔记&lt;/h2&gt;
+				<title>iOS面试遇到的问题.</title>
+				<description>&lt;h2 id=&quot;ios面试题&quot;&gt;iOS面试题&lt;/h2&gt;
 
-&lt;p&gt;Effective Objective-C 2.0这本书买了将近一年了，始终没有花时间来看完，最近工作学习总是感觉肚子里面没啥东西，想来抽时间读完这本书，这里就对这本书稍微记记笔记，以后笔记好温习。&lt;/p&gt;
+&lt;h5 id=&quot;关于工作最近一直在思考着将来需要成为什么样的人现在需要付出什么朋友们腾讯百度阿里各种大厂打拼着自己的事业而我现在各种高不成低不就有点心塞借此记录一下一路面试过来的一些经验也时刻提醒下自己&quot;&gt;关于工作，最近一直在思考着将来需要成为什么样的人，现在需要付出什么，朋友们腾讯，百度，阿里各种大厂打拼着自己的事业。而我现在各种高不成低不就，有点心塞，借此，记录一下一路面试过来的一些经验，也时刻提醒下自己。&lt;/h5&gt;
+
+&lt;p&gt;&lt;br /&gt;1.关于cocoaPod 简单关于install和update的区别，本地的索引index是如果工作的。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;2.关于看过的一些源码，需要大概的了解他设计思路，比如GCDAsyncSocket，AFNetWorking，SDWebImage等，源码解析这一块，需要好好分析分析&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;3.GCD方法，比如A,B,C三个异步现场在运行，D线程需要拿到A,B,C线程运算的结果才能进行下一步。这里需要用到GCD的什么方法。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;4.Block很好用，遇到的有什么问题呢，用__block、__weak修饰的变量在Block里面会泄露的情况呢。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;5.TCP，UDP的运作模式，基于GCDAsyncSocket的源码的解析&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;6.动画，画图等基础知识需要好好稳固一遍。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;7.assgin copy weak strong 有什么区别，从内存的方面说一下，一般用在什么地方&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;8.NSArray，NSMutableArray一般用copy 还是用 strong来修饰&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;9.NSNotificationCenter 的同步异步问题&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;10.iOS App的启动原理，从打开程序到渲染出第一个界面，具体经过了什么操作。&lt;/p&gt;
 </description>
-				<pubDate>Sun, 05 Mar 2017 00:00:00 +0800</pubDate>
-				<link>/%E6%8A%80%E6%9C%AF/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</link>
-				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</guid>
+				<pubDate>Wed, 12 Apr 2017 00:00:00 +0800</pubDate>
+				<link>/%E6%8A%80%E6%9C%AF-ios/2017/04/12/%E9%9D%A2%E8%AF%95%E5%AE%9E%E9%99%85%E9%97%AE%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html</link>
+				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF-ios/2017/04/12/%E9%9D%A2%E8%AF%95%E5%AE%9E%E9%99%85%E9%97%AE%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html</guid>
 			</item>
 		
 			<item>
-				<title>UDP广播接受所遇到的一些问题.</title>
-				<description>&lt;p&gt;UDP 广播所遇到的一些问题&lt;/p&gt;
+				<title>Effective Objective-C 2.0读书总结.</title>
+				<description>&lt;h2 id=&quot;effective-objective-c-20读书笔记&quot;&gt;Effective Objective-C 2.0读书笔记&lt;/h2&gt;
 
-&lt;p&gt;问题一.Error Domain=NSPOSIXErrorDomain Code=51 “Network is unreachable” UserInfo={NSLocalizedDescription=Network is unreachable, NSLocalizedFailureReason=Error in send() function.} 在9.0的5s上面报错
-问题二.Error Domain=NSPOSIXErrorDomain Code=49 “Can’t assign requested address” UserInfo={NSLocalizedDescription=Can’t assign requested address, NSLocalizedFailureReason=Error in send() function.} 在10.2的6s上面报错&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;effective-objective-c-20这本书买了将近一年了始终没有花时间来看完最近工作学习总是感觉肚子里面没啥东西想来抽时间读完这本书这里就对这本书稍微记记笔记以后笔记好温习这本书写了有关于ios或者os-x开发中52个高效高质量的编码方法设计到的东西比较零碎做个小记录&quot;&gt;　　Effective Objective-C 2.0这本书买了将近一年了，始终没有花时间来看完，最近工作学习总是感觉肚子里面没啥东西，想来抽时间读完这本书，这里就对这本书稍微记记笔记，以后笔记好温习。这本书写了有关于iOS或者OS X开发中52个高效高质量的编码方法，设计到的东西比较零碎，做个小记录。&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;我一直以为是10.2在网络限制的严格导致UDP广播发送不出去，但是加了一段百度请求的页面还是会出现这样的问题。&lt;/p&gt;
+&lt;h4 id=&quot;1关于ios的起源以及关于对象和结构体之间的一些关联&quot;&gt;1、关于iOS的起源，以及关于对象和结构体之间的一些关联：&lt;/h4&gt;
 
+&lt;p&gt;　　a. 分配在堆中的内存必须直接管理，比如对象这些，内存需要开发者，或者编译器去做处理。但是定义中不含有*的变量，它可能会使用的是 栈空间(stack space)，例如CGReect，int，float，double，char等非对象类型。因为创建对象需要额外开销，如分配和释放堆内存等。而结构体可以存放在栈空间，在栈帧弹出时会自动清理等。&lt;br /&gt;
+　　b. Objective-C为C语言添加了面向对象特性，采用了动态绑定的消息结构，只有在运行时才会检查对象类型，接收到消息要执行什么操作是由运行时环境而非编译器环境决定。&lt;br /&gt;
+　　c. 理解c语言的核心内存模型，指针可以有助于我们写好Objective-C。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;２在类的头文件中尽量少引用其他头文件&quot;&gt;２、在类的头文件中尽量少引用其他头文件&lt;/h4&gt;
+
+&lt;p&gt;　　a. 除非必要，否则不要引用头文件。一般来说，应在某个类头文件中向前声明提及别的类，并在实现文件中引入需要类的头文件。这样可以尽量的为类间解耦。&lt;br /&gt;
+　　b. 有时无法使用向前引用，比如声明协议的时候，这种情况下，尽量把‘该类遵循的某协议’这条声明移到“class-continuation分类”中。如果不行，可以把协议单独放入一个头文件&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;3多用字面量语法少用与之等价的方法&quot;&gt;3、多用字面量语法，少用与之等价的方法&lt;/h4&gt;
+
+&lt;p&gt;　　a. 用字面量语法来创建字符串，数组，字典可以更加简单明了，比如arr[0],dict[@”one”],等。&lt;br /&gt;
+　　b. 字面量语法创建数组和字典时，需注意值如果存在nil，则会异常。&lt;/p&gt;
+</description>
+				<pubDate>Sun, 05 Mar 2017 00:00:00 +0800</pubDate>
+				<link>/%E6%8A%80%E6%9C%AF-ios/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</link>
+				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF-ios/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html</guid>
+			</item>
+		
+			<item>
+				<title>UDP广播、Bonjour、AirKiss、以及TCP.</title>
+				<description>
 </description>
 				<pubDate>Sat, 04 Mar 2017 00:00:00 +0800</pubDate>
-				<link>/%E6%8A%80%E6%9C%AF/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</link>
-				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</guid>
+				<link>/%E6%8A%80%E6%9C%AF-ios/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</link>
+				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF-ios/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html</guid>
 			</item>
 		
 			<item>
 				<title>Github Pages免费blog搭建，从这里重新开始.</title>
-				<description>&lt;p&gt;程序猿交友网站Github是众所周知的，他可以提供我们代码托管，和各地程序猿协作开发，也是许多开源项目的聚集地。为了交友（技术知识分享），Github提供了一种功能叫做Github Pages，它可以让我们基于自己项目建立自己的网站，
+				<description>&lt;p&gt;　　程序猿交友网站Github是众所周知的，他可以提供我们代码托管，和各地程序猿协作开发，也是许多开源项目的聚集地。为了交友(技术知识分享)，Github提供了一种功能叫做Github Pages，它可以让我们基于自己项目建立自己的网站，
 这里就日常流水般的记录一下自己搭建的blogs。&lt;/p&gt;
 
-&lt;p&gt;建立我们自己的网站的时候我们可以选取一些静态网站生成框架，这样可以自由的定制blog风格，而且很多工具可以在网上找到一堆的主题，选个中意的可以省去很多事情。看好的有两个框架&lt;a href=&quot;http://jekyll.com.cn&quot;&gt;Jekyll&lt;/a&gt;、&lt;a href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;,
-两个的区别在于Jekyll基于Ruby环境，而Hexo基于NodeJs环境（其实Jekyll也是可以在本地直接预览的）。而我选择的是Jekyll，因为是用的Mac，mac自带Ruby环境，平时也用的多一点，安装Jekyll起来也比较方便（其实也是个巨坑），其实想想，我也早就装NodeJs环境的。当然也有
+&lt;p&gt;　　建立我们自己的网站的时候我们可以选取一些静态网站生成框架，这样可以自由的定制blog风格，而且很多工具可以在网上找到一堆的主题，选个中意的可以省去很多事情。看好的有两个框架&lt;a href=&quot;http://jekyll.com.cn&quot;&gt;Jekyll&lt;/a&gt;、&lt;a href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;,
+两个的区别在于Jekyll基于Ruby环境，而Hexo基于NodeJs环境-Jekyll也是可以在本地直接预览的。而我选择的是Jekyll，因为是用的Mac，mac自带Ruby环境，平时也用的多一点，安装Jekyll起来也比较方便，其实想想，我也早就装NodeJs环境的。当然也有
 比较牛的，不用本地环境，直接将copy下来的主题一次改成自己喜欢的样式提交到Github上去，直接预览。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt;提供了一些简单的指引，你可以根据指引来做一个很简单的Hello World 页面。&lt;/p&gt;
 
-&lt;p&gt;这个博客搭建可以有几种选择：
-    &lt;br /&gt;1、完全定制自己的博客
-    &lt;br /&gt;2、找一会你喜欢的框架，然后修改后使用
-    &lt;br /&gt;3、在Github上Fork别人的Blog，然后添加文章&lt;/p&gt;
+&lt;p&gt;这个博客搭建可以有几种选择:&lt;br /&gt;
+　　1、完全定制自己的博客&lt;br /&gt;
+　　2、找一会你喜欢的框架，然后修改后使用&lt;br /&gt;
+　　3、在Github上Fork别人的Blog，然后添加文章&lt;/p&gt;
 
 &lt;p&gt;这里选择的是第二种 博客主题选择的是&lt;a href=&quot;https://github.com/dbtek/dbyll&quot;&gt;dbyll&lt;/a&gt;&lt;/p&gt;
 
@@ -57,7 +102,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;##查看ruby 版本，必须要在2.0.0之上才能安装Jekyll&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;                                                                    
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;revision&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;49005&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;darwin14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;##如果ruby不够高，可以更新下&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;##如果ruby版本不够高，可以更新下&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;##安装jekyll&lt;/span&gt;
 &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;
@@ -69,11 +114,14 @@
     那需要关闭SIP保护，关闭它必须进入recover 模式（重启之后按住command+r），在工具中找到terminal执行csrutil disable命令，回车，然后重启，SIP保护就被关闭了。 
     &lt;br /&gt;2、ruby版本必须高于2.0.0。   如果ruby版本比较低 可以使用rvm 更新ruby版本&lt;a href=&quot;https://segmentfault.com/a/1190000003784636&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;如果Jekyll安装成功了，那现在就可以将本地的serve运行起来了
-&lt;br /&gt;1、将dbyll这个工程down下来，拷贝到Github repoeitory的本地目录下 
-&lt;br /&gt;2、安装bundle用来管理gem，gem install bundle
-&lt;br /&gt;3、cd 到Clone的repository目录下，bundle install
-&lt;br /&gt;4、启动服务 bundle exec jekyll serve&lt;/p&gt;
+&lt;h5 id=&quot;如果jekyll安装成功了那现在就可以将本地的serve运行起来了&quot;&gt;如果Jekyll安装成功了，那现在就可以将本地的serve运行起来了&lt;/h5&gt;
+&lt;p&gt;　　１.将dbyll这个工程down下来，拷贝到Github repoeitory的本地目录下　　&lt;/p&gt;
+
+&lt;p&gt;　　２.安装bundle用来管理gem，gem install bundle　　&lt;/p&gt;
+
+&lt;p&gt;　　３.cd 到Clone的repository目录下，bundle install　　&lt;/p&gt;
+
+&lt;p&gt;　　４.启动服务 bundle exec jekyll serve　　&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;##安装成功之后，查看版本号&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundler&lt;/span&gt;
@@ -84,13 +132,14 @@
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;然后就可以以本地服务运行搭载dbyll这个静态网站了，地址一般为http://127.0.0.1:4000/ ,在网站里面很多内容都是定制好了，接下来感觉哪里不合适自己就改哪里了。文章路径是在_posts目录下，格式为md的，如果想布局好点可以稍微去看看markdown的语法，
-很容易的。&lt;/p&gt;
+很容易的。&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;github+jekyll的工作机制
-&lt;br /&gt;1、简单来说，当你访问你github上面http:user.github.io的时候，GitHub会使用jekyll解析username下面的username.github.io项目中，分支为master的源码，构建一个静态网站，并将生成的index.html展示出来。每一个账户名下都会有一个
+&lt;h4 id=&quot;githubjekyll的工作机制&quot;&gt;github+jekyll的工作机制&lt;/h4&gt;
+&lt;p&gt;1、简单来说，当你访问你github上面http:user.github.io的时候，GitHub会使用jekyll解析username下面的username.github.io项目中，分支为master的源码，构建一个静态网站，并将生成的index.html展示出来。每一个账户名下都会有一个
 GitHub分配的一个域名，同时每个项目下面也会有一个域名，这里就可以选择不同的分支来决定我们需要展现什么样子的网站。&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;2、Jekyll 提供了插件功能，在网站源代码目录下，有一个名为 _plugins的目录， 你可以将一些插件放进去，这样，Jekyll在解析网站源代码时，就会运行你的插件， 这样插件是Ruby写成的。可以为Jekyll添加功能，例如，Jekyll默认是不提供分类 
+&lt;p&gt;2、Jekyll 提供了插件功能，在网站源代码目录下，有一个名为 _plugins的目录， 你可以将一些插件放进去，这样，Jekyll在解析网站源代码时，就会运行你的插件， 这样插件是Ruby写成的。可以为Jekyll添加功能，例如，Jekyll默认是不提供分类 
 页面的，你可以写一个插件，根据文章内容生成分类页面。如果没有插件，你只能每次写文章，添加分类时，为每个分类手动写HTML页面。在本地运行 Jekyll 时，这些插件会自动被调用，但是GitHub在解析网站源代码时， 出于安全考虑，会开启安全模式，禁用
 这些插件，所以我们我们需要在本地用jekyll解析最终生成静态网站，提交到GitHub上。&lt;/p&gt;
 
@@ -98,8 +147,8 @@ GitHub分配的一个域名，同时每个项目下面也会有一个域名，�
 
 </description>
 				<pubDate>Wed, 01 Mar 2017 00:00:00 +0800</pubDate>
-				<link>/%E6%8A%80%E6%9C%AF/2017/03/01/%E5%85%B3%E4%BA%8EGithub-Pages-%E6%90%AD%E5%BB%BAblog.html</link>
-				<guid isPermaLink="true">/%E6%8A%80%E6%9C%AF/2017/03/01/%E5%85%B3%E4%BA%8EGithub-Pages-%E6%90%AD%E5%BB%BAblog.html</guid>
+				<link>/%E6%8B%93%E5%B1%95/2017/03/01/%E5%85%B3%E4%BA%8EGithub-Pages-%E6%90%AD%E5%BB%BAblog.html</link>
+				<guid isPermaLink="true">/%E6%8B%93%E5%B1%95/2017/03/01/%E5%85%B3%E4%BA%8EGithub-Pages-%E6%90%AD%E5%BB%BAblog.html</guid>
 			</item>
 		
 	</channel>

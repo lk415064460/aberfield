@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>UDP广播接受所遇到的一些问题.</title>
+	<title>Effective Objective-C 2.0读书总结.</title>
 	
-	<meta name="description" content="UDP广播接受所遇到的一些问题.">
+	<meta name="description" content="Effective Objective-C 2.0读书总结.">
 	
 	<meta name="author" content="Aberfield">
 
@@ -139,7 +139,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>UDP广播接受所遇到的一些问题. </h1>
+  <h1>Effective Objective-C 2.0读书总结. </h1>
 </div>
 	
 <article>
@@ -147,16 +147,32 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 		 
-		 2017-03-4
+		 2017-03-5
 	 </span>
 	  <div class="article_body">
-	  <p>UDP 广播所遇到的一些问题</p>
+	  <h2 id="effective-objective-c-20读书笔记">Effective Objective-C 2.0读书笔记</h2>
 
-<p>问题一.Error Domain=NSPOSIXErrorDomain Code=51 “Network is unreachable” UserInfo={NSLocalizedDescription=Network is unreachable, NSLocalizedFailureReason=Error in send() function.} 在9.0的5s上面报错
-问题二.Error Domain=NSPOSIXErrorDomain Code=49 “Can’t assign requested address” UserInfo={NSLocalizedDescription=Can’t assign requested address, NSLocalizedFailureReason=Error in send() function.} 在10.2的6s上面报错</p>
+<p><br /></p>
+<h4 id="effective-objective-c-20这本书买了将近一年了始终没有花时间来看完最近工作学习总是感觉肚子里面没啥东西想来抽时间读完这本书这里就对这本书稍微记记笔记以后笔记好温习这本书写了有关于ios或者os-x开发中52个高效高质量的编码方法设计到的东西比较零碎做个小记录">　　Effective Objective-C 2.0这本书买了将近一年了，始终没有花时间来看完，最近工作学习总是感觉肚子里面没啥东西，想来抽时间读完这本书，这里就对这本书稍微记记笔记，以后笔记好温习。这本书写了有关于iOS或者OS X开发中52个高效高质量的编码方法，设计到的东西比较零碎，做个小记录。</h4>
+<p><br /></p>
 
-<p>我一直以为是10.2在网络限制的严格导致UDP广播发送不出去，但是加了一段百度请求的页面还是会出现这样的问题。</p>
+<h4 id="1关于ios的起源以及关于对象和结构体之间的一些关联">1、关于iOS的起源，以及关于对象和结构体之间的一些关联：</h4>
 
+<p>　　a. 分配在堆中的内存必须直接管理，比如对象这些，内存需要开发者，或者编译器去做处理。但是定义中不含有*的变量，它可能会使用的是 栈空间(stack space)，例如CGReect，int，float，double，char等非对象类型。因为创建对象需要额外开销，如分配和释放堆内存等。而结构体可以存放在栈空间，在栈帧弹出时会自动清理等。<br />
+　　b. Objective-C为C语言添加了面向对象特性，采用了动态绑定的消息结构，只有在运行时才会检查对象类型，接收到消息要执行什么操作是由运行时环境而非编译器环境决定。<br />
+　　c. 理解c语言的核心内存模型，指针可以有助于我们写好Objective-C。</p>
+
+<p><br /></p>
+<h4 id="２在类的头文件中尽量少引用其他头文件">２、在类的头文件中尽量少引用其他头文件</h4>
+
+<p>　　a. 除非必要，否则不要引用头文件。一般来说，应在某个类头文件中向前声明提及别的类，并在实现文件中引入需要类的头文件。这样可以尽量的为类间解耦。<br />
+　　b. 有时无法使用向前引用，比如声明协议的时候，这种情况下，尽量把‘该类遵循的某协议’这条声明移到“class-continuation分类”中。如果不行，可以把协议单独放入一个头文件</p>
+
+<p><br /></p>
+<h4 id="3多用字面量语法少用与之等价的方法">3、多用字面量语法，少用与之等价的方法</h4>
+
+<p>　　a. 用字面量语法来创建字符串，数组，字典可以更加简单明了，比如arr[0],dict[@”one”],等。<br />
+　　b. 字面量语法创建数组和字典时，需注意值如果存在nil，则会异常。</p>
 
 	  </div>
 
@@ -166,8 +182,8 @@
 		  
 		  
 			 
-				<li><a href="/categories.html#技术-ref">
-					技术 <span>(3)</span>
+				<li><a href="/categories.html#技术-iOS-ref">
+					技术-iOS <span>(3)</span>
 					
 				</a></li>
 			
@@ -182,8 +198,8 @@
 		  
 			 
 				<li>
-					<a href="/tags.html#技术-ref">
-					技术 <span>(3)</span>
+					<a href="/tags.html#阅读-ref">
+					阅读 <span>(1)</span>
 					
 					</a>
 				</li>
@@ -198,7 +214,7 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=UDP广播接受所遇到的一些问题."
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Effective Objective-C 2.0读书总结."
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -226,10 +242,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous"><a href="/%E6%8A%80%E6%9C%AF/2017/03/01/%E5%85%B3%E4%BA%8EGithub-Pages-%E6%90%AD%E5%BB%BAblog.html" title="Github Pages免费blog搭建，从这里重新开始.">&larr; Previous</a></li>
+		  <li class="previous"><a href="/%E6%8A%80%E6%9C%AF-ios/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html" title="UDP广播、Bonjour、AirKiss、以及TCP.">&larr; Previous</a></li>
 		  
 		  
-		  <li class="next"><a href="/%E6%8A%80%E6%9C%AF/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html" title="Effective Objective-C 2.0读书总结.">Next &rarr;</a></li>
+		  <li class="next"><a href="/%E6%8A%80%E6%9C%AF-ios/2017/04/12/%E9%9D%A2%E8%AF%95%E5%AE%9E%E9%99%85%E9%97%AE%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html" title="iOS面试遇到的问题.">Next &rarr;</a></li>
 		  
 		</ul>
 
@@ -241,7 +257,7 @@
 	</div>
 </article>
 <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="" data-title="UDP广播接受所遇到的一些问题." data-url="/%E6%8A%80%E6%9C%AF/2017/03/04/%E5%85%B3%E4%BA%8EUDP%E5%B9%BF%E6%92%AD%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.html"></div>
+	<div class="ds-thread" data-thread-key="" data-title="Effective Objective-C 2.0读书总结." data-url="/%E6%8A%80%E6%9C%AF-ios/2017/03/05/Effective-Objective-C-2.0%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
