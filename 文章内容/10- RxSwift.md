@@ -732,7 +732,9 @@ disposed
         }
 ```
 
+
 + create 创建一个自定义的Sequence,可以在定义里面的OnNext，onComplete，OnError
+
 
 ```
         /// 自定义可观察的sequence事件
@@ -764,6 +766,7 @@ disposed
             }).disposed(by: disposeBag)
             
         }
+        
 ```
 
 > Practice makes permanent. By completing these challenges, you’ll practice what you’ve learned in this chapter > and pick up a few more tidbits of knowledge about working with observables. A starter playground workspace as well as the finished version of it are provided for each challenge. Enjoy!
@@ -774,7 +777,7 @@ disposed
 > [如何选择操作符](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/content/decision_tree.html)
 
 
-### 谨言
+### 结束语
 
 1. Bjarne Stroustrup（C++之父）说：
 * 逻辑应该是清晰的，bug难以隐藏。
