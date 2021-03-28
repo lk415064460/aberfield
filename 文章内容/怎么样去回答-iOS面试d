@@ -14,6 +14,28 @@
 ##### Swift相关
 
 
+##### iOS Widget开发
+1. Widget如何和主App进行数据交互
+    + 在Widget和主APP间使用App Groups进行数据交互。在Capability中勾选App Groups选项。
+    + 使用NSUserDefault进行数据传输交互
+    + 使用NSFileManage进行数据交互
+    + Widgets和主App以服务端数据为桥接进行数据交互
+
+2. Widget如何支持动画
+    + 不支持播放动画Gif、视频
+    + 不支持滚动
+    + 不支持主动刷新视图
+    + 貌似有私有API可以旋转动画(后期可以去调查)
+
+3. Widget生命周期
+    + 核心是时间线，在对应的时间点上显示对应的UI内容
+    + 时间线由一个或者多个时间线入口以及重载策略组成。
+    + 时间线刷新:
+        1. System Reloads: 由系统主动、按时发起，会relad下一时间的数据。
+        2. App Reloads： 应用在前台时调用Widget Center相关API进行触发；处于后台时通过后台推送刷新时间。
+
+
+
 ##### 第三方库
 
 
