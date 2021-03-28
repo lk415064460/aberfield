@@ -8,6 +8,44 @@
 
 
 ##### OC相关
+1. assign和weak修饰符的区别
+    + assign一般用来修饰值类型，存储在栈空间的属性，由系统管理其内存生命周期
+    + weak属性一般用来打断引用环，被weak引用的对象它的引用计数不会增加，而且在这个对象被释放的时候被Weak修饰的变量会自动置空，不会造成野指针问题。
+    + weak属性实现：
+        1. 通过全局的SideTables查找到对应属性(指针地址为Key)的SideTable。(哈希查找)
+        2. SideTable存在一个自旋锁，RefcountMap, weak_table。其中自旋锁用于保证同一时间只能由一个线程进行修改，RefcountMap代表属性的应用关系，weak_table保存着弱引用实体。结构体如下:
+
+            ```
+            struct SideTable {
+                spinlock_t slock;
+                RefcountMap refcnts;
+                weak_table_t weak_table;
+
+                SideTable() {
+                    memset(&weak_table, 0, sizeof(weak_table));
+                }
+
+                ~SideTable() {
+                    _objc_fatal("Do not delete SideTable.");
+                }
+
+                void lock() { slock.lock(); }
+                void unlock() { slock.unlock(); }
+                void forceReset() { slock.forceReset(); }
+
+                // Address-ordered lock discipline for a pair of side tables.
+
+                template<HaveOld, HaveNew>
+                static void lockTwo(SideTable *lock1, SideTable *lock2);
+                template<HaveOld, HaveNew>
+                static void unlockTwo(SideTable *lock1, SideTable *lock2);
+            };
+
+            ```
+        + [SideTable结构](../posts/weak01.webp)
+
+    + 概念问题：
+        + SideTabls:为了管理所有对象的引用计数和weak指针，苹果创建了一个全局的SideTables，虽然名字后面有个"s"不过他其实是一个全局的Hash表，里面的内容装的都是SideTable结构体而已。它使用对象的内存地址当它的key。管理引用计数和weak指针就靠它了。
 
 
 
