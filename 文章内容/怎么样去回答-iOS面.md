@@ -13,7 +13,9 @@
     + weak属性一般用来打断引用环，被weak引用的对象它的引用计数不会增加，而且在这个对象被释放的时候被Weak修饰的变量会自动置空，不会造成野指针问题。
     + weak属性实现：
         1. 通过全局的SideTables查找到对应属性(指针地址为Key)的SideTable。(哈希查找)
-        2. SideTable存在一个自旋锁，RefcountMap, weak_table。其中自旋锁用于保证同一时间只能由一个线程进行修改，RefcountMap代表属性的应用关系，weak_table保存着弱引用实体。结构体如下:
+        2. SideTable存在一个自旋锁，RefcountMap, weak_table。其中自旋锁用于保证同一时间只能由一个线程进行修改，RefcountMap代表属性的应用关系，weak_table_t保存着弱引用实体。结构体如下:
+
+        + SideTable结构体
 
             ```
             struct SideTable {
@@ -40,13 +42,58 @@
                 template<HaveOld, HaveNew>
                 static void unlockTwo(SideTable *lock1, SideTable *lock2);
             };
-
             ```
-        + [SideTable结构](../posts/weak01.webp)
+
+
+
+        + weak_table_t结构体
+            ```
+            struct weak_table_t {
+                weak_entry_t *weak_entries;
+                size_t    num_entries;
+                uintptr_t mask;
+                uintptr_t max_hash_displacement;
+            };
+            ```
+
+        
+        ![SideTable结构](https://raw.githubusercontent.com/aberfield/figureStore/master/iOS/weak01.webp)
 
     + 概念问题：
         + SideTabls:为了管理所有对象的引用计数和weak指针，苹果创建了一个全局的SideTables，虽然名字后面有个"s"不过他其实是一个全局的Hash表，里面的内容装的都是SideTable结构体而已。它使用对象的内存地址当它的key。管理引用计数和weak指针就靠它了。
 
+
+2. NSObject *obj = [[NSObject alloc] init]占有多少空间？
+    + obj指向的内存空间大小取决于NSObject内部实现的需要占有多少内存空间，如下代码块Object存在一个对象 Class isa，该实例占有8个字节的空间。所有obj里面的实例对象占有8bytes空间，但是obj占有的空间不是8bit而是16bytes，具体原因如下：
+
+
+        + NSObject 对象结构
+        ```
+            @interface NSObject <NSObject> {
+                Class isa  OBJC_ISA_AVAILABILITY;
+            }
+
+            /// 翻译成C和C++如下：
+            struct NSObject_IMPL {
+                Class isa;
+            }
+
+        ```
+
+        + alloc时处理: CF requires all objects be at least 16 bytes
+        ```
+        inline size_t instanceSize(size_t extraBytes) const {
+           if (fastpath(cache.hasFastInstanceSize(extraBytes))) {
+                return cache.fastInstanceSize(extraBytes);
+            }
+
+            size_t size = alignedInstanceSize() + extraBytes;
+            // CF requires all objects be at least 16 bytes.
+            if (size < 16) size = 16;
+            return size;
+        }
+
+        ```
 
 
 ##### Swift相关
