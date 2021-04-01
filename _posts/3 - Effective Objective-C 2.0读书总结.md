@@ -1,6 +1,9 @@
 ---
-layout: mypost
-title: Effective Objective-C 2.0读书总结.
+layout: post
+title: 读书笔记
+date: 2018-12-05 23:19:27 +0800
+tags: [阅读笔记]
+categories: [Code, iOS]
 ---
 
 ## Effective Objective-C 2.0读书笔记
