@@ -15,12 +15,12 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Aberfiel                          # the main title
+title: Aberfield                          # the main title
 
 tagline: It's never too late to learn   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  iOS学习记录小斋
+  学习记录小斋
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://aberfield.github.io'
